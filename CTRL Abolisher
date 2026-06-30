@@ -1,0 +1,19 @@
+   <script>
+  
+  const disabledKeys = ["i", "I", "x", "U", "u", "C", "c", "X"]; // disables ctrl keys
+
+  const showAlert = (e) => {
+    e.preventDefault();
+    alert("message");
+  };
+
+  document.addEventListener("contextmenu", (e) => { // disables right click
+    showAlert(e);
+  });
+
+  document.addEventListener("keydown", (e) => { // disables ctrl and f12
+    if ((e.ctrlKey && disabledKeys.includes(e.key)) || e.key === "F12") {
+      showAlert(e);
+    }
+  });
+</script>
