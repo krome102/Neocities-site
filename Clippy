@@ -1,0 +1,10 @@
+  <script type="module">
+      import { initAgent } from "https://cdn.jsdelivr.net/npm/clippyjs/dist/index.mjs";
+      import * as agents from "https://cdn.jsdelivr.net/npm/clippyjs/dist/agents/index.mjs";
+      const agent = await initAgent(agents.Clippy);
+      agent.show();
+      agent.speak("Hello! I'm Clippy, your virtual assistant!");
+    </script>
+
+Clippy plugin made by pithings!!!
+https://github.com/pithings/clippy
